@@ -1,0 +1,93 @@
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+    .menu-config {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-config {
+        margin-top: 5px;
+    }
+
+    .btn-livro-principal {
+        margin-bottom: 5px;
+        width: 180px;
+        height: 55px;
+    }
+
+    .mais-info .botoes-mais-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 25px;
+    }
+
+    #btn-info-ler{
+        margin-bottom: 5px;
+        width: 180px;
+        height: 40px;
+    }
+
+    #btn-info-favorite {
+        margin-bottom: 5px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    #btn-info-favorite i {
+        transform: translate(-50%, -50%);
+    }
+
+    #btn-info-like{
+        margin-bottom: 5px;
+        width: 50px;
+        height: 50px;
+    }
+
+    #btn-info-like i {
+        transform: translate(-50%, -90%);
+    }
+
+    #btn-info-dislike{
+        margin-bottom: 5px;
+        width: 50px;
+        height: 50px;
+    }
+
+    #btn-info-dislike i {
+        transform: translate(-50%, -50%);
+    }
+
+    .btn-fechar {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width:200px) and (max-width:800px) {
+    .mais-info .container {
+        margin-right: 35px;
+    }
+
+    .mais-info .cover-livro {
+        height: 50%;
+    } 
+
+    .livro-principal .titulo {
+        text-align: center;
+        width: 130%;
+    }
+
+    .livro-principal .descricao {
+        text-align: left;
+        width: 130%;
+    }
+
+    .livro {
+        width: 120%;
+    }
+}

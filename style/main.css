@@ -1,0 +1,284 @@
+:root {
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+/* Cabeçalho */
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 30px;
+    margin-left: 5px;
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+header nav a:hover{
+    color: #fff;
+}
+
+/* Mais informações */
+.mais-info {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,.50);
+    z-index: 2;
+    /* centralizar itens */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.mais-info .container {
+    background: var(--preto);
+    border-radius: 5%;
+    width: 75%;
+    height: 75%;
+}
+
+.mais-info .cover-livro {
+    border-radius: 5%;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url('/img/Backgrounds/O-problema-dos-tres-corpos.jpg');
+
+    height: 400px;
+    /* apenas para a imagem se adequar ao tamanho da tela */
+    background-size: 100% 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.mais-info .botoes-mais-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 40px;
+    margin-right: 65%;
+}
+
+.mais-info .sobre-livro {
+    margin: 15px
+}
+
+.mais-info .sobre-livro .titulo i {
+    color: gold;
+}
+
+.mais-info .btn-mais-info {
+    background-color: rgba(0,0,0,0.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+#btn-info-ler {
+    width: 150px;
+    height: 50px;
+    border-radius: 10%;
+}
+
+#btn-info-ler i {
+    margin-right: 5px;
+}
+
+#btn-info-favorite, #btn-info-like, #btn-info-dislike{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+
+#btn-info-favorite i {
+    font-size: 30px;
+    transform: translate(-50%, 15%);
+    height: 5px;
+}
+
+#btn-info-like i {
+    font-size: 30px;
+    color: green;
+    transform: translate(-50%, 15%);
+    height: 5px;
+}
+
+#btn-info-dislike i {
+    font-size: 30px;
+    color: red;
+    transform: translate(-50%, 15%);
+    height: 5px;
+}
+
+.mais-info .btn-mais-info:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn-fechar {
+    margin-top: 10px;
+    margin-left: 95%;
+    margin-bottom: 23%;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+/* Livros principais */
+
+.livro-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url('/img/Backgrounds/O-problema-dos-tres-corpos.jpg');
+
+    height: 400px;
+    /* apenas para a imagem se adequar ao tamanho da tela */
+    background-size: 100% 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.livro-principal .descricao {
+    margin-bottom: 30px;
+    width: 70%;
+}
+
+.livro-principal .titulo {
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.livro-principal .btn-livro-principal {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 16px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.livro-principal .btn-livro-principal:hover {
+    background-color: white;
+    color: black;
+}
+
+.livro-principal .btn-livro-principal i {
+    margin-right: 5px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.livro-principal .container {
+    width: 70%;
+}
+
+.box-livros {
+    height: 100%;
+    width: 100%;
+    max-height: auto;
+    display: block;
+}
+
+/* carrossel dos livros */
+.carousel-leitura {
+    margin-top: 5px;
+}
+
+.genero-livros {
+    text-decoration: none;
+    color: #AAA;
+}
+
+.genero-livros:hover {
+    text-decoration: none;
+    color: white;
+}
+
+
+.titulo-carousel {
+    margin-left: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Rodapé */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-links {
+    border: none;
+    color: white;
+    text-decoration: none;
+
+    font-size: 25px;
+
+    cursor: pointer;
+    margin-left: 10px;
+
+    transition: .3s ease all;
+}
+
+.profile-links:hover {
+    border: none;
+    color: var(--vermelho);
+    text-decoration: none;
+
+    font-size: 25px;
+
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.profile-links i {
+    margin-right: 5px;
+}
